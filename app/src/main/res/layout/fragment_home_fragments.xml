@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.HomeFragments">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="User Panel"
+        app:titleTextColor="@color/black"
+        android:paddingLeft="10dp"
+        />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="@color/white"
+               >
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="170dp"
+                   android:layout_weight="1"
+                   android:id="@+id/ambulance"
+                   app:cardCornerRadius="20dp"
+                   app:cardElevation="15dp"
+                   android:layout_margin="20dp"
+                   android:backgroundTint="@color/white"
+                   android:background="@color/white"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp"
+                       >
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:src="@drawable/car"
+                           android:background="@color/white"
+                           android:layout_gravity="center"
+                           />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Pay Challan"
+                           android:textSize="15dp"
+                           android:gravity="center"
+                           android:layout_gravity="center"
+                           android:textStyle="bold"
+                           android:textColor="@color/black"/>
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="170dp"
+                   android:layout_weight="1"
+                   app:cardCornerRadius="20dp"
+                   app:cardElevation="15dp"
+                   android:id="@+id/apoinment"
+                   android:layout_margin="20dp"
+                   android:backgroundTint="@color/white"
+                   android:background="@color/white"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp"
+                       >
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:src="@drawable/history"
+                           android:background="@color/white"
+                           android:layout_gravity="center"
+                           />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Challan History"
+                           android:textSize="15dp"
+                           android:gravity="center"
+                           android:layout_gravity="center"
+                           android:textStyle="bold"
+                           android:textColor="@color/black"/>
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="@color/white"
+               >
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="170dp"
+                   android:layout_weight="1"
+                   android:id="@+id/aid"
+                   app:cardCornerRadius="20dp"
+                   app:cardElevation="15dp"
+                   android:layout_margin="20dp"
+                   android:backgroundTint="@color/white"
+                   android:background="@color/white"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp"
+                       >
+
+                       <ImageView
+                           android:layout_width="86dp"
+                           android:layout_height="100dp"
+                           android:layout_gravity="center"
+                           android:background="@color/white"
+                           android:src="@drawable/mapconsole" />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Head Office Location"
+                           android:textSize="15dp"
+                           android:gravity="center"
+                           android:layout_gravity="center"
+                           android:textStyle="bold"
+                           android:textColor="@color/black"/>
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="170dp"
+                   android:layout_weight="1"
+                   app:cardCornerRadius="20dp"
+                   app:cardElevation="15dp"
+                   android:id="@+id/helpinstructions"
+                   android:layout_margin="20dp"
+                   android:backgroundTint="@color/white"
+                   android:background="@color/white"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp"
+                       >
+
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_gravity="center"
+                           android:background="@color/white"
+                           android:src="@drawable/question" />
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Help Instruction"
+                           android:textSize="15dp"
+                           android:gravity="center"
+                           android:layout_gravity="center"
+                           android:textStyle="bold"
+                           android:textColor="@color/black"/>
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:cardCornerRadius="20dp"
+               android:id="@+id/paid"
+               app:cardElevation="15dp"
+               android:layout_margin="20dp"
+               android:backgroundTint="@color/white"
+               android:background="@color/white"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   >
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/paid"
+                       android:background="@color/white"
+                       android:layout_gravity="center"
+                       />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Challan Paid"
+                       android:textSize="15dp"
+                       android:gravity="center"
+                       android:layout_gravity="center"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+       </LinearLayout>
+   </ScrollView>
+
+
+</LinearLayout>

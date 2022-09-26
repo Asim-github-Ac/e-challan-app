@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">E Challan</string>
+    <string name="city">Select City</string>
+    <string name="map_key">AIzaSyBK3d7TYkaSkDIwj_sS1zntBtEmmgECZGk</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

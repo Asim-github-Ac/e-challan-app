@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_admin_home_page.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_apoint_ment_book.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_login_page.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_medicine_delivry.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_send_pdf_reportd.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_sign_up_page.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_view_all_reports.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_view_apoint_ments.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_view_medicine.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_view_medines_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/activity_view_my_reports.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/apoint_items.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/fragment_chat_fragments.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/fragment_home_fragments.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/fragment_settings_fragments.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/medicines.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/ELaboratory/app/src/main/res/layout/pdf_all_reports.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/drawable/button3.xml" value="0.165" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/drawable/edback.xml" value="0.1625" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/drawable/rect_btn.xml" value="0.165" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/font/yellowtail.xml" value="0.29846153846153844" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_apoint_ment_book.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_instruction.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_login_page.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_main.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_sign_up_page.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/fragment_chat_fragments.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/fragment_home_fragments.xml" value="0.22" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/fragment_settings_fragments.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/menu/menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/mipmap-anydpi-v26/elab.xml" value="0.136" />
+        <entry key="..\:/Users/Asim Mehar/AndroidStudioProjects/MyApplication8/app/src/main/res/mipmap-anydpi-v26/elab_round.xml" value="0.136" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_admin_home_page.xml" value="0.25925925925925924" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_apoint_ment_book.xml" value="0.25" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_login_page.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_map_console.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_splash_screen.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_view_apoint_ments.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_view_medicine.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/activity_view_my_reports.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/apoint_items.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/fragment_home_fragments.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Asim Mehar/Downloads/E-laboratory-App-master/app/src/main/res/layout/viewaccept.xml" value="0.12552083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

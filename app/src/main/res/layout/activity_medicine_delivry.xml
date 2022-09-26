@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Admin_panel.medicine_Delivry">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black"
+        app:title="Medicines Delivery"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logolab"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edback"
+        android:id="@+id/panemss"
+        android:text="Patient Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edback"
+        android:id="@+id/pphoness"
+        android:text="Patient Phone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edback"
+        android:id="@+id/paddresss"
+        android:text="Patient Address"/>
+    <Spinner
+        android:id = "@+id/pspinner"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:prompt = "@string/app_name"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+
+        android:textStyle="bold"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edback"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap_bbar"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/ap_submitmedi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rect_btn"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

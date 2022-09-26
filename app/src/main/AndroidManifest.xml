@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fyp.e_laboratory">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/elab"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/elab_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".Googlemap.MapConsole"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+        <activity
+            android:name=".Admin_panel.ViewMedinesAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanel.ViewMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanel.ViewMyReports"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_panel.ViewAllReports"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_panel.SendPdfReportd"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_panel.medicine_Delivry"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_panel.ViewApointMents"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanel.ApointMentBook"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanel.Instruction"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_panel.Admin_Home_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

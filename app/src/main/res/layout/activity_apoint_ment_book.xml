@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".UserPanel.ApointMentBook">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/paid"
+        android:layout_marginTop="20dp"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     >
+     <EditText
+         android:id="@+id/ap_name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginTop="30dp"
+         android:layout_marginEnd="30dp"
+         android:background="@drawable/edback"
+         android:hint="Full Name"
+
+         android:imeOptions="actionNext"
+         android:inputType="textEmailAddress"
+         android:padding="15dp"
+         android:textColor="#353758"
+         android:textColorHint="#353758"
+         android:textStyle="bold" />
+     <EditText
+         android:id="@+id/ap_email"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/edback"
+         android:hint="Email"
+
+         android:imeOptions="actionNext"
+         android:inputType="textEmailAddress"
+         android:padding="15dp"
+         android:textColor="#353758"
+         android:textColorHint="#353758"
+         android:textStyle="bold" />
+     <Spinner
+         android:id="@+id/spinner"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_marginTop="10dp"
+
+
+         android:padding="15dp"
+         style="@style/Spinner"
+         android:background="@color/red"
+         android:prompt = "@string/city" />
+     <EditText
+         android:id="@+id/ap_phone"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/edback"
+         android:hint="+92"
+         android:imeOptions="actionNext"
+         android:inputType="text"
+         android:padding="15dp"
+         android:textColor="#353758"
+         android:textColorHint="#353758"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/ap_address"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/edback"
+         android:hint="Address"
+         android:imeOptions="actionNext"
+         android:inputType="textEmailAddress"
+         android:padding="15dp"
+         android:textColor="#353758"
+         android:textColorHint="#353758"
+         android:textStyle="bold" />
+     <EditText
+         android:id="@+id/cardnumber"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/edback"
+         android:hint="Card Number"
+         android:imeOptions="actionNext"
+         android:inputType="textEmailAddress"
+         android:padding="15dp"
+         android:textColor="#353758"
+         android:textColorHint="#353758"
+         android:textStyle="bold" />
+     <EditText
+         android:id="@+id/billamount"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/edback"
+         android:hint="Bill amount"
+         android:imeOptions="actionNext"
+         android:inputType="textEmailAddress"
+         android:padding="15dp"
+         android:textColor="#353758"
+         android:textColorHint="#353758"
+         android:textStyle="bold" />
+     <Button
+         android:id="@+id/genrateqr"
+         android:layout_width="130dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/edback"
+         android:imeOptions="actionNext"
+         android:text="GenrateQr"
+         android:inputType="textEmailAddress"
+         android:padding="15dp"
+         android:textColor="#353758"
+         android:textColorHint="#353758"
+         android:textStyle="bold" />
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:src="@drawable/paid"
+         android:id="@+id/showqr"
+         android:paddingTop="20dp"
+         />
+     <TimePicker
+         android:id="@+id/timePicker1"
+         android:layout_marginTop="10dp"
+         android:layout_width="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_height="wrap_content" />
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="20dp"
+         android:gravity="center"
+         android:layout_gravity="center"
+         android:text="Change Time" />
+     <ProgressBar
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/ap_pbbar"
+         android:visibility="gone"
+         android:layout_margin="10dp"
+         />
+     <Button
+         android:id="@+id/ap_submit"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginStart="30dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginEnd="30dp"
+
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/rect_btn"
+         android:text="Submit"
+         android:textColor="@android:color/white"
+         android:textSize="13dp"
+         android:textStyle="bold" />
+ </LinearLayout>
+    </ScrollView>
+</LinearLayout>
