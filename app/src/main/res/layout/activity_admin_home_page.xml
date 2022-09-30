@@ -106,6 +106,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="20dp"
             app:cardElevation="15dp"
+            android:visibility="gone"
             android:id="@+id/medicine_deliviry_Admin"
             android:layout_margin="20dp"
             android:backgroundTint="@color/white"
@@ -150,6 +151,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_margin="10dp"
                 >
                 <ImageView

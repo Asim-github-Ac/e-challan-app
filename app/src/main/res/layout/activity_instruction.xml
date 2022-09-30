@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:layout_margin="10dp"
-        android:text="Injuries are practically inevitable in emergency situations. There’s a chance you get hurt by whatever’s causing the emergency; for instance, you could get burned in a fire, or you could get struck by toppling debris during an earthquake. But injuries are also sustained during the panic that ensues in an emergency. In the rush to get away from danger, you could sprain your ankle or suffer an open wound."
+        android:text="It is very important to know the traffic rules to be safe on the road. It should always obey the traffic signals. Red light means stop. Green light means you can go. Never cross a road on bends. Exceeding speed limits by less than forty kph. "
         />
 
     <TextView

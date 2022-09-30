@@ -161,7 +161,7 @@
                 android:id="@+id/cardshowwws1"
                 />
             <Button
-                android:id="@+id/medi_delivry_items1"
+                android:id="@+id/deleteitem"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"

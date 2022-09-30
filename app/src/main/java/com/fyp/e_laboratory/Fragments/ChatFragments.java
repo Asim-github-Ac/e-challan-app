@@ -29,7 +29,7 @@ LinearLayout linearLayout;
             @Override
             public void onClick(View view) {
                 String phoneNumberWithCountryCode = "+923086515351";
-                String message = "Hello this is E Laboratory Application Please Install this";
+                String message = "Hello this is E Challan Application Please Install this";
 
                 startActivity(
                         new Intent(Intent.ACTION_VIEW,

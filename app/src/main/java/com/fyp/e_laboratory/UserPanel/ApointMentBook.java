@@ -80,8 +80,11 @@ public class ApointMentBook extends AppCompatActivity implements AdapterView.OnI
         btngenrate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Generateqrcode(cardnumber);
+                if(names.getText().toString().isEmpty() || emails.getText().toString().isEmpty() || addresss.getText().toString().isEmpty() || billamount.getText().toString().isEmpty() || phones.getText().toString().isEmpty() || cardnumber.getText().toString().isEmpty()){
+                    Toast.makeText(ApointMentBook.this, "Please Fill All Fields", Toast.LENGTH_SHORT).show();
+                }else{
+                    Generateqrcode(cardnumber);
+                }
             }
         });
         // Spinner click listener

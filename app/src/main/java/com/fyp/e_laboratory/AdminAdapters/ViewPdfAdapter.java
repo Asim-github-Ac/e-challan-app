@@ -55,6 +55,13 @@ public class ViewPdfAdapter extends RecyclerView.Adapter<ViewPdfAdapter.myHolder
         holder.billamount.setText(apointmentModel.getAmount());
         System.out.println("url is_____________________"+apointmentModel.getUrl());
         Picasso.get().load(apointmentModel.getUrl()).into(holder.cardshowsss);
+
+        holder.btndelivry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pdfModelList.remove(position);
+            }
+        });
     }
 
     @Override
@@ -76,7 +83,7 @@ public class ViewPdfAdapter extends RecyclerView.Adapter<ViewPdfAdapter.myHolder
 
             cardshowsss=itemView.findViewById(R.id.cardshowwws1);
             billamount=itemView.findViewById(R.id.billamount1);
-            btndelivry=itemView.findViewById(R.id.medi_delivry_items1);
+            btndelivry=itemView.findViewById(R.id.deleteitem);
 
         }
     }
