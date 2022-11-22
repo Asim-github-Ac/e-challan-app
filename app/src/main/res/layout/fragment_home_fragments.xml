@@ -52,14 +52,14 @@
                        <ImageView
                            android:layout_width="100dp"
                            android:layout_height="100dp"
-                           android:src="@drawable/car"
+                           android:src="@drawable/hotel"
                            android:background="@color/white"
                            android:layout_gravity="center"
                            />
                        <TextView
                            android:layout_width="match_parent"
                            android:layout_height="wrap_content"
-                           android:text="Pay Challan"
+                           android:text="View Hotels"
                            android:textSize="15dp"
                            android:gravity="center"
                            android:layout_gravity="center"
@@ -211,7 +211,7 @@
                    <TextView
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
-                       android:text="Challan Paid"
+                       android:text="Paid Bills"
                        android:textSize="15dp"
                        android:gravity="center"
                        android:layout_gravity="center"

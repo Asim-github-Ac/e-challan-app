@@ -27,8 +27,8 @@ public class Admin_Home_Page extends AppCompatActivity {
         viewreports.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),ViewAllReports.class);
-                intent.putExtra("v","AcceptChallan");
+                Intent intent=new Intent(getApplicationContext(),AddHotels.class);
+                intent.putExtra("v","AddHotels");
                 startActivity(intent);
             }
         });

@@ -119,7 +119,7 @@ public class SettingsFragments extends Fragment {
         }
     }
     public void getUserData(){
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("ELabUsers").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("HotelUsers").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
