@@ -48,7 +48,7 @@ public class SignUpPage extends AppCompatActivity  implements AdapterView.OnItem
         spin.setOnItemSelectedListener(this);
         mRegProgress = new ProgressDialog(this);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("HotelUsers");
+        mDatabase = FirebaseDatabase.getInstance().getReference("HotelUsers");
         mAuth = FirebaseAuth.getInstance();
 
         mRegProgress = new ProgressDialog(this);
