@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Admin Panel"
+        app:title="Service Provider Panel"
         app:titleTextColor="@color/black"
         android:paddingLeft="10dp"
         />
@@ -48,14 +48,14 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/report"
+                        android:src="@drawable/add"
                         android:background="@color/white"
                         android:layout_gravity="center"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Check Total Reports"
+                        android:text="Add Hotels"
                         android:textSize="15dp"
                         android:gravity="center"
                         android:layout_gravity="center"
@@ -83,14 +83,14 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/car"
+                        android:src="@drawable/analysis"
                         android:background="@color/white"
                         android:layout_gravity="center"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="View Challan"
+                        android:text="View Total Booking"
                         android:textSize="15dp"
                         android:gravity="center"
                         android:layout_gravity="center"

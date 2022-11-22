@@ -7,18 +7,28 @@ public class UserData {
     String image;
     String uid;
     String phone;
+    String select_type;
 
 
-    public UserData(String name, String email, String city, String image, String uid, String phone) {
+    public UserData(String name, String email, String city, String image, String uid, String phone, String select_type) {
         this.name = name;
         this.email = email;
         this.city = city;
         this.image = image;
         this.uid = uid;
         this.phone = phone;
+        this.select_type = select_type;
     }
 
     public UserData() {
+    }
+
+    public String getSelect_type() {
+        return select_type;
+    }
+
+    public void setSelect_type(String select_type) {
+        this.select_type = select_type;
     }
 
     public String getName() {

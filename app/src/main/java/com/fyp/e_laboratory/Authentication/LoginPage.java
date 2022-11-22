@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.fyp.e_laboratory.Admin_panel.Admin_Home_Page;
 import com.fyp.e_laboratory.MainActivity;
+import com.fyp.e_laboratory.Model.UserData;
 import com.fyp.e_laboratory.R;
 import com.fyp.e_laboratory.SharedPrefrence.PrefManager;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,8 +30,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GetTokenResult;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 
@@ -52,7 +56,7 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
 
         mAuth = FirebaseAuth.getInstance();
-        mUserDatabase = FirebaseDatabase.getInstance().getReference().child("ELabUsers");
+        mUserDatabase = FirebaseDatabase.getInstance().getReference().child("HotelUsers");
         mLogin_btn=(Button)findViewById(R.id.lg_login);
         mSign_up=(Button)findViewById(R.id.lg_signup);
 
@@ -167,28 +171,45 @@ public class LoginPage extends AppCompatActivity {
                                     @Override
                                     public void onSuccess(Void aVoid) {
 
-                                        // dialog_verifying.cancel();
-                                        //dialog_verifying = null;
-                                        mRegProgress.dismiss();
-                                            PrefManager prefManager=new PrefManager(getApplicationContext());
-                                            prefManager.setToken_Email("User");
-                                            prefManager.setUserID(current_user_id);
-                                            Intent mainIntent = new Intent(LoginPage.this, MainActivity.class);
-                                            mainIntent.putExtra("id", current_user_id);
-                                            startActivity(mainIntent);
-                                            finish();
-//                                        }else if (usertype.equals("Admin")){
+
+//                                        mRegProgress.dismiss();
 //                                            PrefManager prefManager=new PrefManager(getApplicationContext());
-//                                            prefManager.setToken_Email("Admin");
-//                                            Intent mainIntent = new Intent(LoginPage.this, Admin_Home_Page.class);
+//                                            prefManager.setToken_Email("User");
+//                                            prefManager.setUserID(current_user_id);
+//                                            Intent mainIntent = new Intent(LoginPage.this, MainActivity.class);
 //                                            mainIntent.putExtra("id", current_user_id);
 //                                            startActivity(mainIntent);
 //                                            finish();
-//                                        }
-
+                                        mUserDatabase.child(current_user_id).addValueEventListener(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                for (DataSnapshot zoneSnapshot: snapshot.getChildren()) {
+                                                    UserData userData=zoneSnapshot.getValue(UserData.class);
+                                                    if (userData.getUid().equals("Service Provider")){
+                                                        PrefManager prefManager=new PrefManager(getApplicationContext());
+                                                        prefManager.setToken_Email("Service Provider");
+                                                        prefManager.setUserID(current_user_id);
+                                                        Intent mainIntent = new Intent(LoginPage.this, Admin_Home_Page.class);
+                                                        mainIntent.putExtra("id", current_user_id);
+                                                        startActivity(mainIntent);
+                                                    }else if (userData.getUid().equals("User")){
+                                                        PrefManager prefManager=new PrefManager(getApplicationContext());
+                                                        prefManager.setToken_Email("User");
+                                                        prefManager.setUserID(current_user_id);
+                                                        Intent mainIntent = new Intent(LoginPage.this, MainActivity.class);
+                                                        mainIntent.putExtra("id", current_user_id);
+                                                        startActivity(mainIntent);
+                                                     //   Toast.makeText(LoginPage.this, "Something went Wrong", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }
+                                            }
+                                            @Override
+                                            public void onCancelled(@NonNull DatabaseError error) {
+                                                Toast.makeText(LoginPage.this, ""+error.getMessage(), Toast.LENGTH_SHORT).show();
+                                            }
+                                        });
                                     }
                                 });
-
                             } else {
                                 mRegProgress.dismiss();
                                 Log.e("TAG", "exception=" + Objects.requireNonNull(task.getException()).toString());
@@ -254,7 +275,7 @@ public class LoginPage extends AppCompatActivity {
         if (prefManager.getToken_Email().equals("User")){
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
            finish();
-        }else if (prefManager.getToken_Email().equals("Admin"))  {
+        }else if (prefManager.getToken_Email().equals("Service Provider"))  {
             startActivity(new Intent(getApplicationContext(),Admin_Home_Page.class));
            finish();
         }
