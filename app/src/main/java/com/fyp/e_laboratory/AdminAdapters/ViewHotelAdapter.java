@@ -1,7 +1,5 @@
 package com.fyp.e_laboratory.AdminAdapters;
 
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
-
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -15,10 +13,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fyp.e_laboratory.Admin_panel.SendPdfReportd;
 import com.fyp.e_laboratory.Model.ApointmentModel;
 import com.fyp.e_laboratory.R;
-import com.fyp.e_laboratory.UserPanel.ApointMentBook;
+import com.fyp.e_laboratory.UserPanel.BookHotelAgree;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -27,24 +24,24 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class ViewApointAdapters extends RecyclerView.Adapter<ViewApointAdapters.myHoder> {
+public class ViewHotelAdapter extends RecyclerView.Adapter<ViewHotelAdapter.myHoder> {
     Context context;
     List<ApointmentModel> apointmentModelList;
 
-    public ViewApointAdapters(Context context, List<ApointmentModel> apointmentModelList) {
+    public ViewHotelAdapter(Context context, List<ApointmentModel> apointmentModelList) {
         this.context = context;
         this.apointmentModelList = apointmentModelList;
     }
 
     @NonNull
     @Override
-    public ViewApointAdapters.myHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHotelAdapter.myHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.apoint_items,parent,false);
         return new myHoder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewApointAdapters.myHoder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHotelAdapter.myHoder holder, int position) {
         ApointmentModel apointmentModel=apointmentModelList.get(position);
         holder.tvname.setText(apointmentModel.getName());
         holder.tvaddress.setText(apointmentModel.getAddress());
@@ -58,7 +55,21 @@ public class ViewApointAdapters extends RecyclerView.Adapter<ViewApointAdapters.
             @Override
             public void onClick(View view) {
 
-                AddApointment(apointmentModel.getName(),apointmentModel.getEmail(),apointmentModel.getPhone(),apointmentModel.getAddress(),apointmentModel.getTime(),apointmentModel.getUid(),apointmentModel.getCity(),apointmentModel.getCardnumber(),apointmentModel.getUrl(),apointmentModel.getAmount());
+                Intent intent=new Intent(context, BookHotelAgree.class);
+                intent.putExtra("name",apointmentModel.getName());
+                intent.putExtra("email",apointmentModel.getEmail());
+                intent.putExtra("phone",apointmentModel.getPhone());
+                intent.putExtra("address",apointmentModel.getAddress());
+                intent.putExtra("time",apointmentModel.getTime());
+                intent.putExtra("uid",apointmentModel.getUid());
+                intent.putExtra("city",apointmentModel.getCity());
+                intent.putExtra("cardnumber",apointmentModel.getCardnumber());
+                intent.putExtra("geturl",apointmentModel.getUrl());
+                intent.putExtra("amount",apointmentModel.getAmount());
+                intent.putExtra("hurl",apointmentModel.getHotelurl());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+                //AddApointment(apointmentModel.getName(),apointmentModel.getEmail(),apointmentModel.getPhone(),apointmentModel.getAddress(),apointmentModel.getTime(),apointmentModel.getUid(),apointmentModel.getCity(),apointmentModel.getCardnumber(),apointmentModel.getUrl(),apointmentModel.getAmount(),apointmentModel.getHotelurl());
 //                Intent myactivity = new Intent(context.getApplicationContext(), SendPdfReportd.class);
 //                myactivity.putExtra("id",apointmentModel.getUid());
 //                myactivity.putExtra("pname",apointmentModel.getName());
@@ -97,10 +108,10 @@ public class ViewApointAdapters extends RecyclerView.Adapter<ViewApointAdapters.
 
         }
     }
-    public void AddApointment(String name, String email, String phone, String addres, String tim, String uid, String city,String bilnumber,String urls,String amount) {
+    public void AddApointment(String name, String email, String phone, String addres, String tim, String uid, String city,String bilnumber,String urls,String amount,String hotelurl) {
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("AcceptChallan");
-        ApointmentModel apointmentModel = new ApointmentModel(name, email, phone, addres, tim, uid, city,bilnumber,urls,amount);
+        ApointmentModel apointmentModel = new ApointmentModel(name, email, phone, addres, tim, uid, city,bilnumber,urls,amount,hotelurl);
 
         databaseReference.child(uid).setValue(apointmentModel).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

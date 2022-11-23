@@ -18,7 +18,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fyp.e_laboratory.Model.ApointmentModel;
-import com.fyp.e_laboratory.Model.PdfModel;
 import com.fyp.e_laboratory.R;
 import com.squareup.picasso.Picasso;
 
@@ -27,30 +26,30 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-public class ViewPdfAdapter extends RecyclerView.Adapter<ViewPdfAdapter.myHolder> {
+public class ManageHotelAdpt extends RecyclerView.Adapter<ManageHotelAdpt.myHolder> {
     Context context;
     List<ApointmentModel> pdfModelList;
     URL url;
-    public ViewPdfAdapter(Context context, List<ApointmentModel> pdfModelList) {
+    public ManageHotelAdpt(Context context, List<ApointmentModel> pdfModelList) {
         this.context = context;
         this.pdfModelList = pdfModelList;
     }
 
     @NonNull
     @Override
-    public ViewPdfAdapter.myHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ManageHotelAdpt.myHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewaccept,parent,false);
-        return new ViewPdfAdapter.myHolder(view);
+        return new ManageHotelAdpt.myHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewPdfAdapter.myHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ManageHotelAdpt.myHolder holder, int position) {
 
         ApointmentModel apointmentModel=pdfModelList.get(position);
         holder.tvname.setText(apointmentModel.getName());
         holder.tvaddress.setText(apointmentModel.getAddress());
-        holder.tvtime.setText(apointmentModel.getPhone());
-        holder.tvphone.setText(apointmentModel.getTime());
+        holder.tvphone.setText(apointmentModel.getPhone());
+        holder.tvtime.setText(apointmentModel.getTime());
         holder.city.setText(apointmentModel.getCity());
         holder.billamount.setText(apointmentModel.getAmount());
         System.out.println("url is_____________________"+apointmentModel.getUrl());

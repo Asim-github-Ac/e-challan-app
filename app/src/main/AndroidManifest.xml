@@ -23,6 +23,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".BookHotelAgree"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanel.ViewHotels"
+            android:exported="false" />
+        <activity
             android:name=".Admin_panel.AddHotels"
             android:exported="false" />
         <activity

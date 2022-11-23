@@ -9,7 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.fyp.e_laboratory.AdminAdapters.ViewApointAdapters;
+import com.fyp.e_laboratory.AdminAdapters.ViewHotelAdapter;
 import com.fyp.e_laboratory.Model.ApointmentModel;
 import com.fyp.e_laboratory.R;
 import com.google.firebase.database.DataSnapshot;
@@ -47,7 +47,7 @@ public class ViewApointMents extends AppCompatActivity {
 
                     apointmentModelList.add(apointmentModel);
                     recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                    recyclerView.setAdapter(new ViewApointAdapters(getApplicationContext(),apointmentModelList));
+                    recyclerView.setAdapter(new ViewHotelAdapter(getApplicationContext(),apointmentModelList));
 
                 }
 

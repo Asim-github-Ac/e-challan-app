@@ -9,11 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fyp.e_laboratory.AdminAdapters.ViewPdfAdapter;
 import com.fyp.e_laboratory.Model.MedicineDelivry;
 import com.fyp.e_laboratory.R;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 

@@ -8,11 +8,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.fyp.e_laboratory.AdminAdapters.ViewPdfAdapter;
+import com.fyp.e_laboratory.AdminAdapters.ManageHotelAdpt;
 import com.fyp.e_laboratory.Model.ApointmentModel;
-import com.fyp.e_laboratory.Model.PdfModel;
 import com.fyp.e_laboratory.R;
-import com.fyp.e_laboratory.SharedPrefrence.PrefManager;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -44,7 +42,7 @@ public class ViewAllReports extends AppCompatActivity {
                     ApointmentModel pdfModel=snapshot1.getValue(ApointmentModel.class);
                     pdfModelList.add(pdfModel);
                     recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                    recyclerView.setAdapter(new ViewPdfAdapter(getApplicationContext(),pdfModelList));
+                    recyclerView.setAdapter(new ManageHotelAdpt(getApplicationContext(),pdfModelList));
                 }
             }
 

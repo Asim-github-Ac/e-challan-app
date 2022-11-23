@@ -142,23 +142,23 @@ public class ApointMentBook extends AppCompatActivity implements AdapterView.OnI
 
     public void AddApointment(String name, String email, String phone, String addres, String tim, String uid, String city,String bilnumber,String urls,String amount) {
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("EChalllan");
-        ApointmentModel apointmentModel = new ApointmentModel(name, email, phone, addres, tim, uid, city,bilnumber,urls,amount);
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("HotelPost");
+       // ApointmentModel apointmentModel = new ApointmentModel(name, email, phone, addres, tim, uid, city,bilnumber,urls,amount);
 
-        databaseReference.child(uid).setValue(apointmentModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-                progressBar.setVisibility(View.INVISIBLE);
-                Toast.makeText(ApointMentBook.this, "ApointMent Added", Toast.LENGTH_SHORT).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-
-                progressBar.setVisibility(View.INVISIBLE);
-                Toast.makeText(ApointMentBook.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        databaseReference.child(uid).setValue(apointmentModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+//            @Override
+//            public void onSuccess(Void unused) {
+//                progressBar.setVisibility(View.INVISIBLE);
+//                Toast.makeText(ApointMentBook.this, "ApointMent Added", Toast.LENGTH_SHORT).show();
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//
+//                progressBar.setVisibility(View.INVISIBLE);
+//                Toast.makeText(ApointMentBook.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 
     @Override

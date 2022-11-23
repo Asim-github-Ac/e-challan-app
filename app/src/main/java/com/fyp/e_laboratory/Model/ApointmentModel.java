@@ -2,9 +2,9 @@ package com.fyp.e_laboratory.Model;
 
 public class ApointmentModel {
 
-    String name,email,phone,address,time,uid,city,cardnumber,url,amount;
+    String name,email,phone,address,time,uid,city,cardnumber,url,amount,hotelurl;
 
-    public ApointmentModel(String name, String email, String phone, String address, String time, String uid, String city, String cardnumber, String url, String amount) {
+    public ApointmentModel(String name, String email, String phone, String address, String time, String uid, String city, String cardnumber, String url, String amount,String hotelurl) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -15,9 +15,18 @@ public class ApointmentModel {
         this.cardnumber = cardnumber;
         this.url = url;
         this.amount = amount;
+        this.hotelurl=hotelurl;
     }
 
     public ApointmentModel() {
+    }
+
+    public String getHotelurl() {
+        return hotelurl;
+    }
+
+    public void setHotelurl(String hotelurl) {
+        this.hotelurl = hotelurl;
     }
 
     public String getCardnumber() {

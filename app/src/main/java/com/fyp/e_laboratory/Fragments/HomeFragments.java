@@ -18,6 +18,7 @@ import com.fyp.e_laboratory.Googlemap.MapConsole;
 import com.fyp.e_laboratory.R;
 import com.fyp.e_laboratory.UserPanel.ApointMentBook;
 import com.fyp.e_laboratory.UserPanel.Instruction;
+import com.fyp.e_laboratory.UserPanel.ViewHotels;
 import com.fyp.e_laboratory.UserPanel.ViewMedicine;
 import com.fyp.e_laboratory.UserPanel.ViewMyReports;
 
@@ -42,7 +43,7 @@ public class HomeFragments extends Fragment {
         ambulance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), ApointMentBook.class));
+                startActivity(new Intent(getContext(), ViewHotels.class));
             }
         });
         aid.setOnClickListener(new View.OnClickListener() {
