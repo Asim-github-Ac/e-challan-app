@@ -1,13 +1,9 @@
 package com.fyp.e_laboratory.Fragments;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
-import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -16,11 +12,10 @@ import android.view.ViewGroup;
 
 import com.fyp.e_laboratory.Googlemap.MapConsole;
 import com.fyp.e_laboratory.R;
-import com.fyp.e_laboratory.UserPanel.ApointMentBook;
 import com.fyp.e_laboratory.UserPanel.Instruction;
 import com.fyp.e_laboratory.UserPanel.ViewHotels;
 import com.fyp.e_laboratory.UserPanel.ViewMedicine;
-import com.fyp.e_laboratory.UserPanel.ViewMyReports;
+import com.fyp.e_laboratory.UserPanel.ViewBookingHistory;
 
 
 public class HomeFragments extends Fragment {
@@ -57,7 +52,7 @@ public class HomeFragments extends Fragment {
         apoinment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), ViewMyReports.class));
+                startActivity(new Intent(getContext(), ViewBookingHistory.class));
             }
         });
         paid.setOnClickListener(new View.OnClickListener() {

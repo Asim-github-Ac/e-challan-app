@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewMyReports extends AppCompatActivity {
+public class ViewBookingHistory extends AppCompatActivity {
     RecyclerView recyclerView;
     private DatabaseReference mDatabase;
     List<ApointmentModel> pdfModelList=new ArrayList<>();
@@ -52,7 +52,7 @@ public class ViewMyReports extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
-                Toast.makeText(ViewMyReports.this, "error "+ error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewBookingHistory.this, "error "+ error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

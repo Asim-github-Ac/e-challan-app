@@ -23,7 +23,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".BookHotelAgree"
+            android:name=".PayBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanel.BookHotelAgree"
             android:exported="false" />
         <activity
             android:name=".UserPanel.ViewHotels"
@@ -46,7 +49,7 @@
             android:name=".UserPanel.ViewMedicine"
             android:exported="false" />
         <activity
-            android:name=".UserPanel.ViewMyReports"
+            android:name=".UserPanel.ViewBookingHistory"
             android:exported="false" />
         <activity
             android:name=".Admin_panel.ViewAllReports"

@@ -31,8 +31,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/edback"
-                android:hint="Full Name"
-
+                android:hint="Hotel Name"
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
                 android:padding="15dp"
@@ -129,60 +128,7 @@
                 android:textColor="#353758"
                 android:textColorHint="#353758"
                 android:textStyle="bold" />
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal"-->
-<!--                >-->
-<!--                <CheckBox-->
-<!--                    android:id="@+id/nikahbook"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="22dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:text="Nikah Khawan"/>-->
-<!--                <CheckBox-->
-<!--                    android:id="@+id/djbook"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="22dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:text="Dj"/>-->
-<!--                <CheckBox-->
-<!--                    android:id="@+id/qawalbook"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="22dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:text="Qawal"/>-->
-<!--            </LinearLayout>-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal"-->
-<!--                >-->
-<!--                <CheckBox-->
-<!--                    android:id="@+id/talorbook"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="22dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:text="Tailor"/>-->
-<!--                <CheckBox-->
-<!--                    android:id="@+id/sloonbook"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="22dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:text="Sloon"/>-->
-<!--                <CheckBox-->
-<!--                    android:id="@+id/photographatbook"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="22dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:text="Photo Grapher"/>-->
-<!--            </LinearLayout>-->
+
             <Button
                 android:id="@+id/genrateqr"
                 android:layout_width="130dp"

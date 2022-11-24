@@ -177,6 +177,8 @@ public class AddHotels extends AppCompatActivity implements AdapterView.OnItemSe
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("HotelPost");
         ApointmentModel apointmentModel = new ApointmentModel(name, email, phone, addres, tim, uid, city,bilnumber,urls,amount,hurl);
 
+
+
         databaseReference.child(uid).setValue(apointmentModel).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {

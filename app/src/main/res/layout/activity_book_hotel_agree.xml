@@ -1,9 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".UserPanel.BookHotelAgree">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Add Requirements"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/urlagree"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/finalwdding"/>
+            <EditText
+                android:id="@+id/weddbook_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edback"
+                android:hint="Full Name"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="#353758"
+                android:textColorHint="#353758"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/weddbook_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edback"
+                android:hint="Address"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="#353758"
+                android:textColorHint="#353758"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/weddingbook_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edback"
+                android:hint="Add Menu"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="#353758"
+                android:textColorHint="#353758"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/weddingbook_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edback"
+                android:hint="Description..."
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="#353758"
+                android:textColorHint="#353758"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/weddingbook_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edback"
+                android:hint="+92"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="#353758"
+                android:textColorHint="#353758"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/nikahbook1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nikah Khawan" />
+                <CheckBox
+                    android:id="@+id/djbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Dj" />
+                <CheckBox
+                    android:id="@+id/qawalbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Qawal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/talorbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tailor"/>
+                <CheckBox
+                    android:id="@+id/sloonbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sloon"/>
+                <CheckBox
+                    android:id="@+id/photographatbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Photo Grapher"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
